@@ -2,7 +2,7 @@
 
 This Github repository serves a purpose of learning HTML and CSS by cloning KokoaTalk, following the course of [Nomad Coders](https://nomadcoders.co/kokoa-clone). 
 
-## Signup Screen part One
+## Signup Screen part one
 
 First, I will be cloning the signup screen of KokoaTalk, and since this will be the first screen we will be seeing, the file name should be `index.html`. 
 
@@ -14,7 +14,7 @@ Also, when you try to create class or ID but you are afraid that it may be gener
 
 The purpose of BEM is to make people easier to read and understand HTML and CSS. Also, convention is to use `class` instead of `id`. 
 
-## Font Awesome
+## FontAwesome
 
 We need to add icons for the signup screen. Three icons are needed: Wi-Fi, Battery, and Lightning. There are two options: 
 
@@ -28,3 +28,19 @@ From Heroicons, you search the image you want, copy it and paste it on your code
 Hopefully code kit is provided by Nomad Coders, but since it did not work, I just created an account and used my source kit. 
 
 Finally, remember, script always goes last. 
+
+## Signup Screen part two
+
+All the resources for the status bar is prepared. Now all the rest of the screen elements need to be put in HTML. Styles of the screen does not need to be considered for now, as we are currently building the skeleton of the architecture. 
+
+**[Welcome to Kokoa Clone]** part uses header `<h></h>`, **[If you~]** part uses paragraph `<p></p>`, and **[login form]** uses `input type="text"` for Email and password part and `input type="submit"` for Log In and Sign Up part. **[Find Kokoa Account or Password]** uses the link `<a href="#"></a>`
+
+## Status Bar CSS
+
+Under the `<head>`, put in `link:css` and press Enter. It will automatically put in `<link rel="stylesheet" href="style.css">`, the code we need to bring the styles from CSS file. You need to adjust it appropriately. 
+
+By using `display:flex` we put status bar in one line, and `justify-content: space-between` to put status bar components on the position. 
+
+To adjust the font, you can use `font-family` but since it imports the file, if you put too much font in it your website may become heavier. 
+
+However, the layout, especially the position of time, is not beautiful since it is not on the exact center. To achieve consistent appearance, CSS hack (which is one of the coding technique) is used. 
