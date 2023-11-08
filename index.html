@@ -23,7 +23,7 @@
             <span>
                 100%
             </span>
-            <i class="fa-solid fa-battery-full fa-2x"></i>
+            <i class="fa-solid fa-battery-full fa-lg"></i>
             <i class="fa-solid fa-bolt"></i>
         </div>
     </div>
@@ -36,9 +36,11 @@
         </p>
     </header>
     <form action="friends.html" method="get" id="login-form">
-        <input name="username" type="text" placeholder="Email or phone number">
-        <input name="password" type="text" placeholder="Password">
+        <input name="username" type="text" placeholder="Email or phone number" required minlength="1">
+        <input name="password" type="password" placeholder="Password" required minlength="1">
         <input type="submit" value="Log In">
+    </form>
+    <form action="#" method="get" id="login-form">
         <input type="submit" value="Sign Up">
         <a href="#">Find Kokoa Account or Password</a>
     </form>
