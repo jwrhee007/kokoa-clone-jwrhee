@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        body {
+            height: 140vh;
+        }
+    </style>
     <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,11 +35,97 @@
     <header class="screen-header">
         <h1 class="screen-header__title">Friends</h1>
         <div class="screen-header__icons">
-            <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+            <span><a href="find.html"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a></span>
             <span><i class="fa-solid fa-music fa-lg"></i></span>
-            <span><i class="fa-solid fa-gear fa-lg"></i></span>
+            <span><a href="settings.html"><div class="point"></div><i class="fa-solid fa-gear fa-lg"></i></a></span>
         </div>
     </header>
+    <a id="friends-display-link">
+        <i class="fa-solid fa-circle-info"></i>
+        Friends' Names Display
+        <i class="fa-solid fa-chevron-right fa-xs"></i>
+    </a>
+    <main class="friends-screen">
+        <div class="user-component">
+            <div class="user-component__column">
+                <img src="profile.jpg" class="user-component__avatar user-component__avatar--xl">
+                <div class="user-component__text">
+                    <h4 class="user-component__title">Jungwoo Rhee</h4>
+                    <!-- <h6 class="user-component__subtitle">Please check My Kokoa Account Info</h6> -->
+                </div>
+            </div>
+        </div>
+        <div class="friends-screen__channel">
+            <div class="friends-screen__channel-header">
+                <span>
+                    Channel
+                </span>
+                <i class="fa-solid fa-chevron-up fa-xs"></i>
+            </div>
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img src="profile.jpg" class="user-component__avatar user-component__avatar--sm">
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-componenet__title--not-bold">Channel</h4>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <div>
+                        <span>2</span>
+                        <i class="fa-solid fa-chevron-right fa-xs"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="friends-screen__channel">
+            <div class="friends-screen__channel-header">
+                <span>
+                    Friends 5
+                </span>
+                <i class="fa-solid fa-chevron-up fa-xs"></i>
+            </div>
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img src="profile.jpg" class="user-component__avatar user-component__avatar--sm">
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-componenet__title--not-bold">Friends 1</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img src="profile.jpg" class="user-component__avatar user-component__avatar--sm">
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-componenet__title--not-bold">Friends 2</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img src="profile.jpg" class="user-component__avatar user-component__avatar--sm">
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-componenet__title--not-bold">Friends 3</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img src="profile.jpg" class="user-component__avatar user-component__avatar--sm">
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-componenet__title--not-bold">Friends 4</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img src="profile.jpg" class="user-component__avatar user-component__avatar--sm">
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-componenet__title--not-bold">Friends 5</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__btn">
@@ -43,18 +134,18 @@
                 </a>
             </li>
             <li class="nav__btn">
-                <a class="nav__link" href="#">
-                    <span class="nav__notification">1</span>
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification notification1">1</span>
                     <i class="fa-regular fa-comment fa-2x"></i>
                 </a>
             </li>
             <li class="nav__btn">
-                <a class="nav__link" href="#">
+                <a class="nav__link" href="find.html">
                     <i class="fa-solid fa-magnifying-glass fa-2x"></i>
                 </a>
             </li>
             <li class="nav__btn">
-                <a class="nav__link" href="#">
+                <a class="nav__link" href="more.html">
                     <span class="nav__notification2"></span>
                     <i class="fa-solid fa-ellipsis fa-2x"></i>
                 </a>
