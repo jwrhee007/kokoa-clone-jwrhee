@@ -104,3 +104,21 @@
 .open-post__column {
     margin-bottom: 20px;
 }
+
+@keyframes heartBeat {
+    0% {
+        color: white;
+    }
+    50% {
+        color: tomato;
+        trnasform: scale(2);
+    }
+    100% {
+        color: white;
+    }
+}
+
+.open-post__heart-count:hover i {
+    will-change: transform;
+    animation: heartBeat 1s linear infinite;
+}

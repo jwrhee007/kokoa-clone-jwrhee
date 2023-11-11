@@ -1,6 +1,6 @@
 .alt-screen-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: var(--horizontal-space);
     margin-bottom: 15px;
@@ -10,3 +10,25 @@
     font-size: 28px;
     font-weight: 600;
 }
+
+.alt-screen-header__column {
+    width: 33%;
+}
+
+.alt-screen-header__column:last-child {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.alt-screen-header__column:nth-child(2) {
+    text-align: center;
+}
+
+.alt-screen-header__column:first-child {
+    margin-right: auto;
+}
+
+.alt-screen-header__column span:last-child {
+    margin-left: 20px;
+  }
